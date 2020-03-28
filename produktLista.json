@@ -1,0 +1,12 @@
+[
+    {"produktId": 1,
+    "namn": "Hoodie",
+    "märke": "Morris",
+    "pris": 650
+    },
+    {"produktId": 2,
+    "namn": "Hoodie",
+    "märke": "Adidas",
+    "pris": 499
+    }
+]
