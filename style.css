@@ -1,0 +1,398 @@
+body{
+	margin: 0;
+	background-image:url('bakgrund.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+/*	font-family: 'futura-pt-bold','Helvetica','Arial',sans-serif;;*/
+	font-family: 'bebas neue';
+}
+
+#wrapper{
+	margin: 0% 15%;
+	height: 100%;
+	background-color: #FFFFFF;
+	
+}
+
+
+/* Header/ Navigation bar */
+
+header{
+	background-color: #222222;
+	color: whitesmoke;
+	width: 100%;
+	height: 80px;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	font-size: 1.3rem;
+	position: absolute;
+	top:0px;
+	/*font-weight: bold;*/
+}
+
+#topbars{
+	margin: 0% 15%;
+	width: 100%;
+}
+
+nav ul{
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+	overflow: visible;
+	/*overflow: hidden;*/
+}
+
+#navbar nav ul li{
+	margin-right:0;
+	float: left;
+	
+}
+
+#navbar nav ul li a{
+	text-decoration:none;
+	color:whitesmoke;
+	margin:0;
+	padding: 30px 20px;
+	float:left;
+	text-align: center;
+}
+
+#navbar nav ul li a:hover{
+    color: #d4af37;
+    transition:0.5s;
+}
+
+
+
+#logo{
+	float:left;
+	padding: 5px 5px;
+	height:70px;
+}
+
+#logo:hover{
+	background-color:#3B3B3B;
+	transition:0.5s;
+}
+
+#topbarright{
+	margin: 0;
+	padding: 0;
+	display:flex;
+	float:right;
+}
+
+#topbarright #varukorg{	
+	padding:30px;
+	height: 20px;	
+}
+
+#topbarright #varukorg:hover{
+	background-color:#3B3B3B;
+	transition:0.5s;
+}
+
+/* Footer */
+
+footer{
+	width:100%;
+	color:#5F5F5F;
+	background-color: #111111;
+	margin-bottom:0px;
+}
+
+#wrapperfoot{
+	height: 100%;
+	margin: 0% 15%;
+	
+}
+
+#lowefoot p{
+	margin-top:50%;
+	font-size: 1vw;
+	
+}
+
+#lowerfoot{
+	display:grid;
+	grid-template-columns: auto auto auto;
+}
+
+#footerbrands{
+	margin: 0% 5%;
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	height: 90px;
+}
+
+#footerbrands img{
+	height:100%;
+	margin: 0;		
+}
+
+
+#fotmärken{
+	display: block;
+	width:80%;
+	margin-left: auto;
+	margin-right:auto;
+	padding:3% 0px;
+}
+
+
+
+#footlogo{
+/*	max-height:100px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:0;
+	*/
+
+	display: block;
+	width:25%;
+	margin-left: auto;
+	margin-right:auto;
+	margin-bottom:20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Bildspel */
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  height: 80vh;
+  width: 100%;
+  top:80px;
+  margin-bottom: 100px;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.slide.current {
+  opacity: 1;
+}
+
+
+.buttons button#next {
+  position: absolute;
+  top: 45%;
+  right: 16%;
+}
+
+.buttons button#prev {
+  position: absolute;
+  top: 45%;
+  left: 16%;
+}
+
+.buttons button {
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  padding: 13px 15px;
+  border-radius: 50%;
+  outline: none;
+}
+
+.buttons button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+ 
+.slide:first-child {
+  background: url('SI_SLIDE.png') no-repeat
+    center top/cover;
+}
+.slide:nth-child(2) {
+  background: url('NF_SLIDE.png') no-repeat
+    center top/cover;
+}
+.slide:nth-child(3) {
+  background: url('CP_SLIDE.png') no-repeat
+    center top/cover;
+}
+
+
+
+
+
+
+
+
+
+/* Utvalda produkter */
+
+h2{
+	font-size: 3rem;
+	text-align: center;
+	margin: 0;
+}
+
+#utvaldaprod{
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+}
+
+
+
+
+/*Produktruta*/
+
+.produktruta{
+	background-color:#FFFFFF;
+	margin:0;
+	padding: 1rem 1.5rem;
+	
+}
+
+.produktruta a{
+	list-style-type:none;
+	text-decoration: none;
+	color: black;
+}
+
+.produktruta img{
+	width:100%;
+}
+
+
+.marke{
+	text-align: center;
+	color: #525252;
+	font-size: 1rem;
+}
+
+.namn{
+	text-align:center;
+	font-size:1.3rem;
+}
+
+.pris{
+	text-align:center;
+	font-size:1.2rem;
+	color: #5E5E5E;
+}
+
+.korgknapp{
+	font-family:'bebas neue';
+	color:white;
+	background-color:#001740;
+	border: solid;
+	font-size: 1.4rem;
+	border-radius:10px;
+	padding:2px 10px;
+	display:block;
+	margin-right:auto;
+	margin-left:auto;
+	
+	
+
+}
+
+.korgknapp:hover{
+	background-color:#00235fef;
+	font-size:1.5rem;
+	transition: 200ms;
+}
+
+
+
+
+.produktruta:hover{
+	/*margin-top:1px;*/
+	transition: 0.3s;
+	opacity: 0.9;
+}
+
+.produktruta .marke:hover{
+	/*text-decoration: underline;*/
+	color: black;
+	margin:0;
+	
+}
+
+
+
+
+
+
+
+.kundklubb{
+	width: 100%;
+	height:auto;
+	padding:0;
+	margin:0;
+}
+
+
+.kundklubb img{
+	display:block;
+	width:85%;
+	height:auto;
+	margin-right: auto;
+	margin-left:auto;
+	padding:40px 0px;
+	
+	
+}
+
+
+
+
+
+#varumärken{
+	width:100%;
+	margin:0;
+	padding:0;
+}
+
+#varumärken ul{
+	list-style-type:none;
+	text-decoration: none;
+	margin:0;
+	padding:0;
+
+}
+
+#varumärken ul li a{
+	text-decoration: none;
+	margin:0;
+	padding:0;
+}
+
+
+
+#varumärken img{
+	width:100%;
+	height:auto;
+	margin:0;
+	padding: 0;
+}
