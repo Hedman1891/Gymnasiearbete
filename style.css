@@ -1,17 +1,30 @@
+
+
+*,
+*.after,
+*.before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /* enable overriding, since it is not default! */ }
+
+
 body{
-	margin: 0;
 	background-image:url('bakgrund.png');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
-/*	font-family: 'futura-pt-bold','Helvetica','Arial',sans-serif;;*/
+	font-family: 'futura-pt-bold','Helvetica','Arial',sans-serif;;
 	font-family: 'bebas neue';
 }
 
 #wrapper{
 	margin: 0% 15%;
+	margin-top: 80px;
 	height: 100%;
 	background-color: #FFFFFF;
+
+	padding-bottom: 320px;    /* Footer height */
 	
 }
 
@@ -19,15 +32,16 @@ body{
 /* Header/ Navigation bar */
 
 header{
+	/* Högt z-index för att menyn ska ligga ovanpå */
+	z-index: 1000;
 	background-color: #222222;
 	color: whitesmoke;
 	width: 100%;
 	height: 80px;
-	margin: 0;
-	padding: 0;
 	display: flex;
 	font-size: 1.3rem;
-	position: absolute;
+	/* position: absolute; */
+	position:fixed;
 	top:0px;
 	/*font-weight: bold;*/
 }
@@ -39,8 +53,6 @@ header{
 
 nav ul{
 	list-style-type:none;
-	margin: 0;
-	padding: 0;
 	overflow: visible;
 	/*overflow: hidden;*/
 }
@@ -54,7 +66,6 @@ nav ul{
 #navbar nav ul li a{
 	text-decoration:none;
 	color:whitesmoke;
-	margin:0;
 	padding: 30px 20px;
 	float:left;
 	text-align: center;
@@ -95,13 +106,24 @@ nav ul{
 	transition:0.5s;
 }
 
+
+/* https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/ */
+#page-container {
+	position: relative;
+	min-height: 100vh;
+  }
+
 /* Footer */
 
 footer{
 	width:100%;
 	color:#5F5F5F;
 	background-color: #111111;
-	margin-bottom:0px;
+
+	position: absolute;
+	bottom: 0;
+	  
+	height: 320px;            /* Footer height */
 }
 
 #wrapperfoot{
@@ -125,7 +147,7 @@ footer{
 	margin: 0% 5%;
 	display: grid;
 	grid-template-columns: auto auto auto auto auto;
-	height: 90px;
+	height: 320px; /*Footer height*/
 }
 
 #footerbrands img{
@@ -180,7 +202,6 @@ footer{
   overflow: hidden;
   height: 80vh;
   width: 100%;
-  top:80px;
   margin-bottom: 100px;
 }
 
@@ -313,18 +334,12 @@ h2{
 	margin-right:auto;
 	margin-left:auto;
 	
-	
-
 }
 
 .korgknapp:hover{
 	background-color:#00235fef;
 	font-size:1.5rem;
-	transition: 200ms;
 }
-
-
-
 
 .produktruta:hover{
 	/*margin-top:1px;*/
@@ -338,11 +353,6 @@ h2{
 	margin:0;
 	
 }
-
-
-
-
-
 
 
 .kundklubb{
