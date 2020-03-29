@@ -2,20 +2,19 @@
 <!DOCTYPE html>
 <html>
     <head>        
-    <link rel="stylesheet" type="text/css" href="style.css"> 
-    <link rel="icon" type="img/png" href="icon.png">
+        <link rel="stylesheet" type="text/css" href="style.css"> 
+        <link rel="icon" type="img/png" href="icon.png">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/>
 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <title>Hedman Casual Wear</title>
+        <title>Hedman Casual Wear</title>
     </head>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
     <script src="https://unpkg.com/cart-localstorage@1.1.4/dist/cart-localstorage.min.js" type="text/javascript"></script>
 
     <!-- <script>
@@ -41,10 +40,6 @@
                             <li><a onclick='$("#wrapper").load("page3.html");'>VARUMÄRKEN</a></li>
                             <li><a onclick='$("#wrapper").load("page4.html");'>KLÄDER</a></li>
                             <li><a onclick='$("#wrapper").load("page5.html");'>OM OSS</a></li>
-                            <!-- <li><a href="page3.html">VARUMÄRKEN</a></li>
-                            <li><a href="page4.html">KLÄDER</a><li>
-                            <li><a href="page5.html">OM OSS</a></li>
-                            <li><a href="page6.html">KONTAKTA OSS</a></li> -->
                         </ul>
                     </nav>
                 </div>
@@ -80,7 +75,7 @@
 
             <h2>Utvalda Produkter</h2>
 
-            <div id="utvaldaprod">
+            <div id="plaggmeny">
 
                 <div class="produktruta">
                     <!-- <a href="stoneisland.html"> -->
@@ -88,36 +83,40 @@
                         <div class="marke">Stone Island</div>
                         <div class="namn">721540126-v0020</div>
                         <div class="pris">6600kr</div>
-                        <button class="korgknapp" onclick="cartLS.add({id: 1, name: 'Nike Air', price: 100})">KÖP</button>
+                        <button class="korgknapp" onclick="cartLS.add({id: 1, name: 'Stone Island 721540126-v0020', price: 6600})">KÖP</button>
                     <!-- </a> -->
                 </div>
 
                <div class="produktruta">
-                    <a href="cpcompany.html">
+                    <!-- <a href="cpcompany.html"> -->
                         <img src="cp-company-overshirt-frost.jpeg">
                         <div class="marke">CP Company</div>
                         <div class="namn">OVERSHIRT FROST</div>
                         <div class="pris">2150kr</div>
-                    </a>
+                        <button class="korgknapp" onclick="cartLS.add({id: 2, name: 'CP Company OVERSHIRT FROST', price: 2150})">KÖP</button>
+                    <!-- </a> -->
                 </div>
                 
                 <div class="produktruta">
-                    <a href="thenorthface.html">
+                    <!-- <a href="thenorthface.html"> -->
                         <img src="the-north-face-m-1985-mountain-jacket-blackwhite.jpeg">
                         <div class="marke">The North Face</div>
                         <div class="namn">1985 MOUNTAIN JACKET</div>
                         <div class="pris">1100kr</div>
-                    </a>
+                        <button class="korgknapp" onclick="cartLS.add({id: 3, name: 'The North Face 1985 Mountain Jacket', price: 1100})">KÖP</button>
+                    <!-- </a> -->
                 </div>
                 
                 <div class="produktruta">
-                    <a href="fredperry.html">
+                    <!-- <a href="fredperry.html"> -->
                         <img src="fred-perry-twin-tipped-fp-shirt-navy.jpeg">
                         <div class="marke">Fred Perry</div>
                         <div class="namn">TWIN TIPPED FP SHIRT NAVY</div>
                         <div class="pris">1100kr</div>
-                    </a>
+                        <button class="korgknapp" onclick="cartLS.add({id: 4, name: 'Fred Perry Twin Tipped FP Shirt Navy', price: 1100})">KÖP</button>
+                    <!-- </a> -->
                 </div>
+
                 
             </div>
 

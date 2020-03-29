@@ -14,16 +14,16 @@ body{
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
-	font-family: 'futura-pt-bold','Helvetica','Arial',sans-serif;;
-	font-family: 'bebas neue';
+	font-family: 'Bebas Neue Pro';
 }
+
+
 
 #wrapper{
 	margin: 0% 15%;
 	margin-top: 80px;
-	height: 100%;
+	min-height: 50vw;
 	background-color: #FFFFFF;
-
 	padding-bottom: 320px;    /* Footer height */
 	
 }
@@ -123,7 +123,8 @@ footer{
 	position: absolute;
 	bottom: 0;
 	  
-	height: 320px;            /* Footer height */
+	/* Footer height */
+	height: 320px;            
 }
 
 #wrapperfoot{
@@ -167,13 +168,6 @@ footer{
 
 
 #footlogo{
-/*	max-height:100px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top:0;
-	*/
-
 	display: block;
 	width:25%;
 	margin-left: auto;
@@ -188,13 +182,6 @@ footer{
 
 
 
-
-
-
-
-
-
-
 /* Bildspel */
 
 .slider {
@@ -202,7 +189,7 @@ footer{
   overflow: hidden;
   height: 80vh;
   width: 100%;
-  margin-bottom: 100px;
+ 
 }
 
 .slide {
@@ -222,13 +209,15 @@ footer{
 
 .buttons button#next {
   position: absolute;
-  top: 45%;
+  top: 15%;
+  /* top: 45%; */
   right: 16%;
 }
 
 .buttons button#prev {
   position: absolute;
-  top: 45%;
+  top: 15%;
+  /* top: 45%; */
   left: 16%;
 }
 
@@ -274,10 +263,10 @@ footer{
 h2{
 	font-size: 3rem;
 	text-align: center;
-	margin: 0;
+	margin: 10px 0px;
 }
 
-#utvaldaprod{
+#plaggmeny{
 	display: grid;
 	grid-template-columns: 25% 25% 25% 25%;
 }
@@ -323,7 +312,7 @@ h2{
 }
 
 .korgknapp{
-	font-family:'bebas neue';
+	font-family:'bebas neue pro';
 	color:white;
 	background-color:#001740;
 	border: solid;
@@ -344,7 +333,7 @@ h2{
 .produktruta:hover{
 	/*margin-top:1px;*/
 	transition: 0.3s;
-	opacity: 0.9;
+	opacity: 0.8;
 }
 
 .produktruta .marke:hover{
@@ -376,8 +365,6 @@ h2{
 
 
 
-
-
 #varumärken{
 	width:100%;
 	margin:0;
@@ -398,11 +385,30 @@ h2{
 	padding:0;
 }
 
-
-
 #varumärken img{
 	width:100%;
 	height:auto;
 	margin:0;
 	padding: 0;
+}
+
+
+
+
+.card-body{
+margin:10px 10%;
+}
+
+tr .korgknapp{
+	font-size: 1rem;
+}
+
+tr .korgknapp:hover{
+	font-size: 1.05rem;
+	transition: 100ms;;
+}
+
+.table{
+	margin-left: auto;
+	margin-right:auto;
 }
