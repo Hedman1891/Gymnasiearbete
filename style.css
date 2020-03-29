@@ -318,6 +318,7 @@ h2{
 
 .korgknapp{
 	font-family: 'Bebas Neue Pro';
+	src: url('Bebas\ Neue\ Pro\ Regular.otf');
 	font-weight: normal;
 	color:white;
 	background-color:#001740;
