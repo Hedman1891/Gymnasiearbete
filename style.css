@@ -313,7 +313,7 @@ h2{
 
 .pris{
 	text-align:center;
-	font-size:1.2rem;
+	font-size:1.4rem;
 	color: #5E5E5E;
 }
 
@@ -336,6 +336,8 @@ h2{
 .korgknapp:hover{
 	background-color:#00235fef;
 	font-size:1.45rem;
+
+
 }
 
 .produktruta:hover{
@@ -451,4 +453,11 @@ tr .korgknapp:hover{
 		left: 5%;
 	  }
 	  
+}
+
+@media(max-width:640px){
+	#plaggmeny{
+		display: grid;
+		grid-template-columns: 50% 50%;
+	}
 }
