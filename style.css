@@ -269,6 +269,7 @@ h2{
 	font-size: 3rem;
 	text-align: center;
 	margin: 10px 0px;
+	font-weight: bold;
 }
 
 #plaggmeny{
@@ -418,4 +419,36 @@ tr .korgknapp:hover{
 .table{
 	margin-left: auto;
 	margin-right:auto;
+}
+
+
+#Omossbild{
+	width:100%;
+	height:auto;
+}
+
+
+
+@media(max-width:900px){
+	#wrapper{
+		margin:0;
+		margin-top:80px;
+	}
+
+	#topbars{
+		margin: 0;
+	}
+
+	.buttons button#next {
+		position: absolute;
+		top: 12%;
+		right: 5%;
+	  }
+	  
+	  .buttons button#prev {
+		position: absolute;
+		top: 12%;
+		left: 5%;
+	  }
+	  
 }
