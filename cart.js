@@ -12,7 +12,7 @@
 							<button type="button" class="fas fa-plus"
 								onClick="cartLS.quantity(${item.id},1)"></button>
 						</td>
-						<td style="width: 60px;">	
+						<td style="width: 60px;>	
 							<button type="button" class="btn btn-block btn-sm btn-outline-primary"
 								onClick="cartLS.quantity(${item.id},-1)">-</button>
 						</td>

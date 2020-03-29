@@ -35,7 +35,7 @@ body{
 	margin-top: 80px;
 	min-height: 50vw;
 	background-color: #FFFFFF;
-	padding-bottom: 320px;    /* Footer height */
+	padding-bottom: 20vw;    /* Footer height */
 	
 }
 
@@ -53,6 +53,7 @@ header{
 	font-size: 1.3rem;
 	position:fixed;
 	top:0px;
+	overflow: hidden;
 }
 
 #topbars{
@@ -63,7 +64,6 @@ header{
 nav ul{
 	list-style-type:none;
 	overflow: visible;
-	/*overflow: hidden;*/
 }
 
 #navbar nav ul li{
@@ -129,7 +129,7 @@ footer{
 	background-color: #111111;
 	position: absolute;
 	bottom: 0; 
-	height: 320px;            
+	height: 20vw;            
 }
 
 #wrapperfoot{
@@ -147,6 +147,9 @@ footer{
 #lowerfoot{
 	display:grid;
 	grid-template-columns: auto auto auto;
+	width:80%;
+	margin-right:auto;
+	margin-left:auto;
 }
 
 #footerbrands{
@@ -154,13 +157,12 @@ footer{
 	display: grid;
 	grid-template-columns: auto auto auto auto auto;
 	height: 320px; /*Footer height*/
-}
+} 
 
-#footerbrands img{
+/* #footerbrands img{
 	height:100%;
 	margin: 0;		
-}
-
+} */
 
 #fotmärken{
 	display: block;
@@ -170,19 +172,14 @@ footer{
 	padding:3% 0px;
 }
 
-
-
 #footlogo{
 	display: block;
-	width:25%;
+	width:35%;
 	margin-left: auto;
 	margin-right:auto;
 	margin-bottom:20px;
 
 }
-
-
-
 
 
 
@@ -263,7 +260,7 @@ footer{
 
 
 
-/* Utvalda produkter */
+/* Utvalda produkter m.fl */
 
 h2{
 	font-size: 3rem;
@@ -418,6 +415,11 @@ tr .korgknapp:hover{
 	transition: 100ms;;
 }
 
+tr .korgknapp:active{
+	
+	
+}
+
 .table{
 	margin-left: auto;
 	margin-right:auto;
@@ -425,9 +427,16 @@ tr .korgknapp:hover{
 
 
 #Omossbild{
-	width:100%;
+	
 	height:auto;
+	margin: 0 15%;
 }
+
+.OOinnehåll{
+	position:relative;
+}
+
+
 
 
 
@@ -435,6 +444,10 @@ tr .korgknapp:hover{
 	#wrapper{
 		margin:0;
 		margin-top:80px;
+	}
+
+	#wrapperfoot{
+		margin:0;
 	}
 
 	#topbars{
@@ -447,12 +460,19 @@ tr .korgknapp:hover{
 		right: 5%;
 	  }
 	  
-	  .buttons button#prev {
+	.buttons button#prev {
 		position: absolute;
 		top: 12%;
 		left: 5%;
-	  }
-	  
+	}
+
+	footer{
+		height:200px;
+	}
+
+	#wrapper{
+		padding-bottom: 200px;;
+	}  
 }
 
 @media(max-width:640px){
