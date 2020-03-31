@@ -156,13 +156,9 @@ footer{
 	margin: 0% 5%;
 	display: grid;
 	grid-template-columns: auto auto auto auto auto;
-	height: 320px; /*Footer height*/
+	height: 320px; 
 } 
 
-/* #footerbrands img{
-	height:100%;
-	margin: 0;		
-} */
 
 #fotmärken{
 	display: block;
@@ -330,11 +326,9 @@ h2{
 	
 }
 
-.korgknapp:hover{
+.produktruta .korgknapp:hover{
 	background-color:#00235fef;
 	font-size:1.45rem;
-
-
 }
 
 .produktruta:hover{
@@ -403,17 +397,32 @@ h2{
 
 
 .card-body{
-margin:10px 10%;
+margin:20px 5vw;
+
+}
+
+.table{
+	width: 100%;
+}
+
+tr{
+	font-size: 1.2rem; 
 }
 
 tr .korgknapp{
-	font-size: 1rem;
+	font-size: 1.2rem; 
+	margin-right: 0px;;
 }
 
 tr .korgknapp:hover{
-	font-size: 1.05rem;
-	transition: 100ms;;
+	background-color:#9c0000;
+	transition: 0.3s;
 }
+
+.text-right{
+	margin-right: 0px;
+}
+
 
 
 .table{
@@ -422,7 +431,10 @@ tr .korgknapp:hover{
 }
 
 
- #Omossbild{
+
+
+
+#Omossbild{
 	width: 100%;
 	display: block;
 	margin-left: auto;
@@ -432,12 +444,45 @@ tr .korgknapp:hover{
 
 .OmOss{
 	margin:0% 10%;
-	font-size: 1.5rem;
+	font-size: 1.85rem;
 	text-align: center;
 }
 
+.OmOss h2{
+	margin-top: 0;;
+}
 
 
+.checkout{
+	color:white;
+	background-color: rgb(0, 153, 25);
+	width:100%;
+	height:100px;
+	border: none;
+	margin-top: 50px;
+}
+
+
+.korgcontainer{
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#korg{
+	height:100px;
+	width: auto;
+	
+}
+
+.checkout h3{
+	color:white;
+	font-family: 'Bebas Neue Pro';
+	font-weight: 500;
+	font-size: 2rem;
+}
+
+/* Responsivitet */
 
 @media(max-width:900px){
 	#wrapper{
