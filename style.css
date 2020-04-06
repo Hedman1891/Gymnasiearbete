@@ -207,14 +207,14 @@ footer{
 
 .buttons button#next {
   position: absolute;
-  top: 15%;
+  top: 14%;
   /* top: 45%; */
   right: 16%;
 }
 
 .buttons button#prev {
   position: absolute;
-  top: 15%;
+  top: 14%;
   /* top: 45%; */
   left: 16%;
 }

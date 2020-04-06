@@ -1,3 +1,0 @@
-
-Starta webbservern utan cachning:
-http-server -c-1
